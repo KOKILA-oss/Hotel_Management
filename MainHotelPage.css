@@ -1,0 +1,195 @@
+
+body {
+  font-family: 'Poppins', sans-serif; /* Modern font choice */
+  background-color: #eef2f7;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.hotel-list-page {
+  padding: 40px;
+  background-color: #f5f8fc;
+  color: #333;
+}
+
+
+.hotel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 2px solid #e2e2e2;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+}
+
+.brand h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #1d3c6a; /* Deep blue for a luxury feel */
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.search-container {
+  width: 40%;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 50px; /* Rounded search bar */
+  font-size: 1.1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* More shadow for focus */
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #1d3c6a;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.hotel-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Responsive grid */
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.hotel-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Elegant shadow */
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.hotel-card:hover {
+  transform: translateY(-10px); /* More hover movement for interaction */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+
+.hotel-image img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 3px solid #4a90e2;
+}
+
+
+.hotel-info {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hotel-info h2 {
+  font-size: 1.7rem;
+  color: #1d3c6a;
+  margin-bottom: 10px;
+}
+
+.hotel-info p {
+  font-size: 1rem;
+  margin: 5px 0;
+  color: #555;
+}
+
+/* Additional Details */
+.hotel-info p strong {
+  color: #4a90e2; /* Highlight details */
+}
+
+.complementaries {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.complementary-item {
+  background-color: #e9f4fc;
+  color: #1d3c6a;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+/* Book Button */
+.book-button {
+  background-color: #1d3c6a;
+  color: white;
+  padding: 12px;
+  height: auto;
+  width: 100%;
+  font-size: 1rem;
+  border: none;
+  border-radius: 50px; /* Rounded button */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 20px;
+}
+
+.book-button:hover {
+  background-color: #3e73af; /* Brighter hover */
+  transform: translateY(-5px); /* Hover effect */
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .hotel-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-container {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .hotel-info h2 {
+    font-size: 1.5rem;
+  }
+
+  .hotel-info p {
+    font-size: 0.9rem;
+  }
+
+  .book-button {
+    font-size: 0.9rem;
+  }
+}
+/* Add this CSS to your existing style for the brand/logo animation */
+
+/* Animation for the brand text */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px); /* Start slightly off-screen to the left */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* End at the normal position */
+  }
+}
+
+.brand h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #1d3c6a;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  animation: slideIn 1s ease-out; /* Animation effect */
+}
+
+/* You can adjust the duration, delay, or easing function for different effects */

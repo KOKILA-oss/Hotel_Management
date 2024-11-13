@@ -1,0 +1,62 @@
+/* src/SignUp.css */
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(https://wallpapercave.com/wp/wp1846068.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .signup-content {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px 50px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .signup-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+  }
+  
+  .signup-content p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .signup-form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+  }
+  
+  .signup-form button {
+    padding: 10px 20px;
+    background-color: #ff7f50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signup-form button:hover {
+    background-color: #ff6347;
+  }
+  .error-message {
+    color: red; /* Change the color to your preference */
+    margin-bottom: 10px;
+  }
+  

@@ -1,0 +1,245 @@
+.homepage {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url(https://wallpapercave.com/wp/wp1846068.jpg); /* Background image */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.brand-title {
+  font-size: 3em;
+  color: #ff7f50;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif; /* Apply the unique font */
+}
+
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links a, .nav-button {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links a:hover, .nav-button:hover {
+  color: #ff6347; /* Change to a lighter shade on hover */
+  transform: scale(1.1); /* Slightly enlarge the element on hover */
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  font-weight: bold; 
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.5em; 
+  font-weight: bold;
+}
+
+.features, .about-us, .contact {
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  margin: 20px;
+  text-align: center;
+}
+
+.feature-cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.card h4 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.card p {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
+.footer p {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(https://wallpapercave.com/wp/wp1846068.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.signup-content {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px 50px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.signup-content h2 {
+  font-size: 3em;
+  margin-bottom: 15px;
+}
+
+.signup-content p {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-form input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1em;
+}
+
+.signup-form button {
+  padding: 10px 20px;
+  background-color: #ff7f50;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-form button:hover {
+  background-color: #ff6347;
+}
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+  margin: 0 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth effect */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slightly enlarge the box on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow to give a lifted effect */
+}
+
+.feature-image {
+  width: 100%; /* Makes the image responsive */
+  height: auto; /* Maintains aspect ratio */
+  margin-bottom: 10px; /* Adds some space between the image and the text */
+  border-radius: 8px; /* Optional: Adds rounded corners to the image */
+}
+.hero {
+  color:orange;
+  text-align: center;
+  padding: 50px 20px; /* Adjust padding as necessary */
+  background-color: #f7f7f7; /* Optional background color */
+}
+
+.book-hotel-button {
+  margin-top: 20px; /* Space above the button */
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: orangered; /* Primary color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.book-hotel-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+.profile-container {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-icon {
+  cursor: pointer;
+  color: #fff;
+}
+
+.profile-menu {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.profile-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.profile-menu li {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.profile-menu li:hover {
+  background-color: #f0f0f0;
+}
+h3{
+  color:white;
+}

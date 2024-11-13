@@ -1,0 +1,121 @@
+
+.my-bookings {
+  padding: 40px;
+  background: linear-gradient(135deg, #e0f7fa, #f5f7fa);
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: orange;
+  margin-bottom: 40px;
+  font-size: 36px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #e67b0f, #eb650c);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.user-info {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  margin-bottom: 50px;
+  max-width: 600px;
+  margin: 0 auto;
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+.user-info:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+}
+
+.user-info p {
+  font-size: 20px;
+  color: #34495e;
+  margin: 14px 0;
+}
+
+.bookings-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 35px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.booking-item {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.booking-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  background: linear-gradient(90deg, #ed790c, #f07518);
+  transition: height 0.3s ease;
+}
+
+.booking-item:hover::before {
+  height: 100%;
+}
+
+.booking-item h3 {
+  color: orange;
+  margin-bottom: 16px;
+  font-size: 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.booking-item p {
+  color: #7f8c8d;
+  margin: 12px 0;
+  font-size: 18px;
+  position: relative;
+  z-index: 1;
+}
+
+.booking-item p strong {
+  color: #2c3e50;
+}
+
+.cancel-button {
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cancel-button:hover {
+  background: #c0392b;
+  transform: translateY(-3px);
+}
+
+@media (min-width: 768px) {
+  .user-info {
+    padding: 35px;
+  }
+
+  .booking-item {
+    padding: 35px;
+  }
+}
